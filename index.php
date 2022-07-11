@@ -1,10 +1,5 @@
 <?php
 
-$position = strpos('toto[at]gmail.com', '@');
+$position = strstr('toto@gmail.com', '@');
 
-if ($position === false)
-    $msg = "Pas d'arobase";
-else
-    $msg = "Arobase";
-
-echo $msg;
+echo $position;

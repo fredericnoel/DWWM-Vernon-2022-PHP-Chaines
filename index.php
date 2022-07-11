@@ -1,5 +1,10 @@
 <?php
 
-$chaine = "Ceci est une phrase.";
-$detail = str_word_count($chaine, 2);
-var_dump($detail);
+$position = strpos('toto[at]gmail.com', '@');
+
+if ($position === false)
+    $msg = "Pas d'arobase";
+else
+    $msg = "Arobase";
+
+echo $msg;

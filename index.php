@@ -1,5 +1,5 @@
 <?php
 
 $chaine = "Ceci est une phrase.";
-echo $chaine[1];
-// Avant PHP8, on pouvait également écrire $chaine{1}
+$detail = str_word_count($chaine, 2);
+var_dump($detail);

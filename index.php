@@ -1,5 +1,7 @@
 <?php
 
-$position = strstr('toto@gmail.com', '@');
+$phrase = "Nous en sommes en 2022";
+$cherche = "2022";
+$remplace = "2023";
 
-echo $position;
+echo str_replace($cherche, $remplace, $phrase);
